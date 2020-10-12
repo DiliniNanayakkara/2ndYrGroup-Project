@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Drugs</title>
+  <style>
+    *{margin: 0; padding: 0;} 
+*{ text-decoration: none; }
+.clearfix { overflow: auto; }
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  background-image: url(https://previews.123rf.com/images/jackf/jackf1511/jackf151100852/47748649-profesionales-j%C3%B3venes-farmac%C3%A9uticos-espa%C3%B1oles-en-recepci%C3%B3n-de-farmacia-listos-para-ayudar.jpg);
+  
+
+}
+header {
+  margin: 0 auto;
+  width: 1200px;
+  background: linear-gradient(#7FB5F1,white);
+}
+.top-bar {
+  width: 1200px;
+  background: #003087 ;
+
+}
+.top-bar-links{
+  float: left;
+}
+.site-search {
+  float: right;
+}
+.top-bar-links ul {
+  margin: 15px;
+
+  list-style: none;
+
+}
+.top-bar-links ul li {
+  padding: 0px 10px;
+  border-right: 1px solid white;
+
+  display: inline-block;
+}
+.top-bar-links ul li:last-child {
+  border: none;
+}
+.top-bar-links ul li a {
+  color: white;
+}
+.top-bar-links ul li a:hover {
+  color: #8FB5C6;
+}
+.logout ul li a {
+  color: white;
+}
+.logout ul li a:hover {
+  color:#8FB5C6  ;
+}
+.logout {
+  float: right;
+}
+.logout ul {
+  margin: 15px;
+  list-style: none;
+}
+.logout ul li {
+  padding: 0px 10px;
+  display: inline-block;
+
+}
+.site-search {
+  padding: 0px 10px;
+  margin: 15px;
+  float: right;
+  border-radius: 10px;
+
+}
+.site-search input{
+  border: 0;
+  padding: 0 10px;
+  border-radius: 10px;
+  height: 20px;
+  float: left;
+}
+.site-search button {
+  background: #5261C1 ;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 0px;
+  height: 20px;
+  float: right;
+}
+.site-search button:hover {
+  background: #1E2B81;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+
+/* Add padding to containers */
+.container {
+  margin-top: 10px;
+  padding: 16px;
+  background:#77BFC7 ;
+  width: 500px;
+
+ 
+}
+.container:hover {
+  opacity: 90%;
+}
+/* Full-width input fields */
+.container input[type=text], input[type=name],input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.container input[type=text], input[type=price],input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.container input[type=text]:focus, input[type=name]:focus {
+  background-color: #ddd;
+  outline: none;
+
+}
+h1{
+  color: #1A0411 ;
+  margin-bottom: 50px;
+}
+label,b{
+  color: black;
+}
+p{
+  color: #BDBDBD;
+}
+
+
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #411C32 ;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+.container label {
+  float: left;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+s
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="OO.jpg" alt="Girl in a jacket" width="200" height="100">
+</header><!-- /header -->
+<div class="wrapper">
+  
+  <div class="top-bar clearfix">
+    <div class="top-bar-links">
+      <ul>
+        <li><a href="#">Drug Stock</a></li>
+        <li><a href="#">Pharmacist Registration</a></li>
+        <li><a href="#">Delivert Person Registration</a></li>
+        <li><a href="#">Customer Details</a></li>
+        <li><a href="#">Seller Registration</a></li>
+      
+        
+      </ul>
+    </div><!--top-bar-links-->
+    <div class="logout">
+      <ul>
+        <li><a href="#">Log Out</a></li>
+      </ul>
+    </div><!--logout-->
+        <div class="site-search">
+      <form  method="get" action="SellerReg.html">
+        <input type="text" placeholder="search">
+        <button type="submit">search</button>
+      </form>
+      
+    </div><!--site-search-->
+  </div><!--tip-bar-->
+
+ <center>
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Add Drug</h1>
+   
+     <label for="number"><b>Number</b></label>
+    <input type="number" placeholder="Enter number" name="number" id="number" required>
+
+    <label for="name"><b>Generic Name</b></label>
+    <input type="name" placeholder="Enter Generic Name" name="name" id="name" required>
+
+     <label for="name"><b>Drug Name</b></label>
+    <input type="name" placeholder="Enter Drug Name" name="name" id="name" required>
+
+ <label for="text"><b>Drug Code</b></label>
+    <input type="text" placeholder="Enter Drug Code" name="text" id="text" required>
+ 
+    <label for="text"><b>Dose</b></label>
+    <input type="text" placeholder="Enter Dose" name="text" id="text" required>
+
+    <label for="text"><b>QTY</b></label>
+    <input type="text" placeholder="Enter QTY" name="text" id="text" required>
+
+    <label for="date"><b>Expire Date</b></label>
+    <input type="date" placeholder="Enter Expire Date" name="date" id="date" required>
+
+    <label for="price"><b>Price</b></label>
+    <input type="price" placeholder="Enter Price" name="price" id="price" required>
+    
+
+    <button type="submit" class="registerbtn">Add</button>
+  </div>
+  
+ 
+</form>
+</center>
+  
+  </div><!--wrapper-->
+</body>
+</html>
