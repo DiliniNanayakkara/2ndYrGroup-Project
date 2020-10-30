@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>My Account</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script> 
+          $(document).ready(function(){
+            $('.mobnav h3').click(function(){
+               $('.mobnav ul').slideToggle();
+           });
+          });
+  </script>
+</head>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box;}
+
+body { font: 16px Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+
+
+.wrapper{ width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap }
+
+header { width: 1200px;
+  background: linear-gradient(#7FB5F1,white);
+}
+a {
+  text-decoration: none;
+  font-variant: bold;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+}
+nav {
+  background: #003087 ;
+  width: 1200px;
+}
+nav ul li a { 
+display: inline-block;
+padding: 10px 10px;
+color: white;
+ }
+ nav ul li a:hover {
+  background: #2C7AD1 ;
+ }
+ .mobnav ul li { 
+  width : 100px; 
+  display: block;
+  }
+  .mobnav h3 {
+    padding: 15px;
+    background: #5F93CB ;
+  }
+  .mobnav {
+    display: none;
+    width: 100px;
+  }
+  .mobnav ul li a {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #3B618B ;
+  }
+ @media screen and (max-width:500px){
+  .wrapper {
+    width: 100%;
+  }
+  .mobnav {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .photo { width: 100%;
+    margin-left: 20px;
+   }
+   .Account { width: 100%;
+    margin-left: 50px;
+    }
+    .site-search {
+      width: 100%;
+    }
+    .button1 {
+      width: 100%;
+    }
+     .button2 {
+      width: 100%;
+    }
+ }
+ .site-search {
+  padding: 0px 10px;
+  margin-top: 10px;
+  float: right;
+  border-radius: 10px;
+  width: 100%;
+
+}
+.site-search input{
+  border: 0;
+  padding: 0 10px;
+  border-radius: 10px;
+  height: 20px;
+  float: left;
+  background: #AEBEF0 ;
+}
+.site-search button {
+  background: #5261C1 ;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 0px;
+  height: 20px;
+  float: left;
+}
+.site-search button:hover {
+  background: #1E2B81;
+}
+.photo{
+  
+  width:400px;
+  float: left;
+  
+}
+.Account{
+
+  width: 800px;
+  
+}
+.button1 {
+  padding:0px 10px;
+  margin-top: 10px;
+  float: left;
+  border-radius: 10px;
+  
+  margin-left: 100px;
+}
+.button1 button {
+  background: #5261C1 ;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 0px;
+  height: 20px;
+  float: left;
+  padding: 20px;
+}
+.button1 button:hover {
+  background: #1E2B81;
+}
+.button2 {
+  padding: 0px 10px;
+  margin-top: 10px;
+  margin-left: 100px;
+  border-radius: 10px;
+  
+}
+.button2 button {
+  background: #5261C1 ;
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 0px;
+  height: 20px;
+  float: left;
+  padding: 20px;
+}
+.button2 button:hover {
+  background: #1E2B81;
+}
+</style>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="OO.jpg" alt="pharmacist" width="200" height="100">
+    </header>
+    <nav>
+      <ul>
+         <li><a href="#">LogIn</a></li>
+        <li><a href="#">MyAccount</a></li>
+        <li><a href="#">OrderList</a></li>
+        <li><a href="#">Log Out</a></li>
+      </ul>
+       <div class="mobnav">
+        <h3>Menu</h3>
+        <ul>
+        <li><a href="#">LogIn</a></li>
+        <li><a href="#">MyAccount</a></li>
+        <li><a href="#">OrderList</a></li>
+       <li><a href="#">Log Out</a></li>
+        
+      </ul> 
+
+    </nav>
+      <div class="site-search">
+      <form  method="get" action="SellerReg.html">
+        <input type="text" placeholder="search">
+        <button type="submit">search</button>
+      </form>
+     </div>
+
+      <div class="photo">
+        <img src="BB.png" alt="Girl in a jacket" width="150" height="150">
+      </div>
+      <div class="Account">
+        <h1>My Account</h1>
+        
+      </div>
+      <div class="button1">
+         <button type="submit" class="registerbtn">Add</button>
+      
+        
+      </div>
+      <div class="button2">
+        <button type="submit" class="registerbtn">Update</button>
+        
+      </div>
+      </div>
+</body>
+</html>
